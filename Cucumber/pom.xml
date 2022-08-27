@@ -92,6 +92,13 @@
                             <projectName>CustomerappDemo</projectName>
                             <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
                             <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
+                            
+                            <systemPropertyVariables> 
+                            <executuionbrowser> ${browser} </executuionbrowser>
+                            <appURL>${urltobetested} </appURL>
+                            </systemPropertyVariables>
+                            
+                            
                         </configuration>
                     </execution>
                 </executions>
